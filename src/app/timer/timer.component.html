@@ -1,0 +1,12 @@
+<span>{{hours}}:</span> <span>{{minutes}}:</span><span>{{seconds}}</span>
+
+<br>
+<button class="timer-button" (click)="startTimer()">
+  {{ startText }}
+</button>
+<button class="timer-button" (click)="Wait()" [disabled]="waitR">Wait
+</button>
+<button class="timer-button" (click)="clearTimer()">Reset</button>
+<br>
+
+
