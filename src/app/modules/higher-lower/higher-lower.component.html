@@ -1,0 +1,13 @@
+<div class="container">
+  <form>
+    <label>Would you prefer a reverse list or Higher/LowerCase?</label>
+    <p><input name="Case" type="radio" checked  (click)="hideLow()"> Reverse</p>
+    <p><input name="Case" type="radio"  (click)="showLow()"> Case</p>
+    <div *ngIf="noReverse">
+      <p><input name="HigLow" type="radio" (click)="takeHig()" >Hig</p>
+      <p><input name="HigLow" type="radio" (click)="takeLow()" checked>Low</p>
+    </div>
+    <input type="text" placeholder="Введіть текст" required minlength="4" maxlength="20" #text>
+  </form>
+  <button class="btn-primary" (click)="transformText(text.value)">Go</button>
+</div>

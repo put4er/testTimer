@@ -1,4 +1,4 @@
-import {Component, OnDestroy} from '@angular/core';
+import {Component} from '@angular/core';
 import {interval, of} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {Subscription} from 'rxjs';
@@ -88,9 +88,9 @@ export class TestComponent {
     this.alive = false;
     this.startText = 'Start';
     this.counter = undefined;
-    this.hours = '00',
-      this.seconds = '00',
-      this.minutes = '00';
+    this.hours = '00';
+    this.seconds = '00';
+    this.minutes = '00';
     this.mySub.unsubscribe();
   }
 

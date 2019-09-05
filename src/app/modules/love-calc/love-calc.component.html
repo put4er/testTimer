@@ -1,0 +1,6 @@
+<label>First name:<input type="text" #first></label>
+<label>Second name:<input type="text" #second></label>
+<button (click)="getResult(first.value, second.value)">Result</button>
+<br>
+<h2>Result</h2>
+<label>{{result}}</label>

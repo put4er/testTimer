@@ -14,7 +14,7 @@ export class TimerComponent {
   seconds: any = '00';
   counter: number;
   timer;
-  alive: boolean = false;
+  alive = false;
   startText = 'Start';
   waitR = true;
 
@@ -55,7 +55,7 @@ export class TimerComponent {
       clearInterval(this.timer);
     }
   }
-  //зупинка таймера
+  // зупинка таймера
   Wait() {
     if (this.startText === 'Start') {
       this.waitR = true;
@@ -73,9 +73,9 @@ export class TimerComponent {
     this.alive = false;
     this.startText = 'Start';
     this.counter = undefined;
-    this.hours = '00',
-      this.seconds = '00',
-      this.minutes = '00';
+    this.hours = '00';
+    this.seconds = '00';
+    this.minutes = '00';
     clearInterval(this.timer);
   }
 }

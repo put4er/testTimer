@@ -1,0 +1,9 @@
+<div class="container">
+  <ul>
+    <div *ngFor="let products of products; let i = index"  routerLink="/products/{{products.name}}">
+      <li>
+        {{products.name}}
+      </li>
+    </div>
+  </ul>
+</div>

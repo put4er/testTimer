@@ -1,0 +1,9 @@
+<div class="container">
+  <form>
+    <div class="">
+      <span><label>Сelsius<input type="text" #celsius pattern="/^-?(0|[1-9]\d*)?$/)]"></label></span>
+      <span><label><input type="text" #kelvin pattern="/^-?(0|[1-9]\d*)?$/)]">Kelvin</label></span>
+    </div>
+  </form>
+  <button type="submit" class="btn-primary" [disabled]="form.invalid" (click)="convert(celsius,kelvin)">Convert</button>
+</div>

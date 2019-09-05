@@ -1,0 +1,9 @@
+<label>Choose your answer</label>
+<br><label>Rock<button (click)="Choose('rock')">
+  <img src="../../../assets/rock%20papper%20sces/rockL.JPG" alt="rockL" #rock></button></label>
+<br><label>Paper<button (click)="Choose('paper')">
+  <img src="../../../assets/rock%20papper%20sces/papperL.JPG" alt="paperL" #paper></button></label>
+  <label>{{result}}</label>
+  <img [src]="opponentAnswer" alt="right" #paper>
+<br><label>Scessors<button (click)="Choose('scessors')">
+  <img src="../../../assets/rock%20papper%20sces/scesL.JPG" alt="scessorsL" #scessors></button></label>

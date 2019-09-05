@@ -1,0 +1,12 @@
+<p>
+  Напишите программу, которая выводит на экран числа от 1 до 100.
+  При этом вместо чисел, кратных I, программа должна выводить слово «Fizz»,
+  а вместо чисел, кратных J — слово «Buzz». Если число кратно и I, и J, то программа должна выводить слово «FizzBuzz»
+</p>
+<label>I:<input type="text" #i></label>
+<label>J:<input type="text" #j></label>
+<button (click)="Start(i.value, j.value)">Start</button>
+<h2>Answer</h2>
+<div *ngFor="let arr of array">
+    <label>{{arr}},</label>
+</div>

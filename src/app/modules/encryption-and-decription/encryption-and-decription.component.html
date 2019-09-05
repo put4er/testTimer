@@ -1,0 +1,11 @@
+<label>Text:</label>
+<input type="text" #element>
+<button (click)="Convert(element.value)">Convert text</button>
+<label>Your text:</label>
+<label>"{{ConvertText}}</label>
+<br>
+<label>Text again:</label>
+<input type="text" #elementC>
+<button (click)="DeConvert(elementC.value)">Convert text</button>
+<label>Your text:</label>
+<label>"{{DeconvertText}}</label>

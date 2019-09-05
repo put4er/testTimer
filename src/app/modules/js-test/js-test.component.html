@@ -1,0 +1,12 @@
+<button (click)="tryimg()">aa</button>
+
+
+<table *ngIf="multi">
+<tr  *ngFor="let i of multiStr let strI = index">
+  <td *ngFor="let j of i let strJ = index" (click)="take(strI, strJ)">
+    <img src="../../../assets/img/{{j}}">
+  </td>
+</tr>
+</table>
+
+
